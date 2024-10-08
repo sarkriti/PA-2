@@ -2,22 +2,12 @@
 
 <% content_for :title, "Movies" %>
 
-
-
-# <div id="movies">
-#   <% @movies.each do |movie| %>
-#     <%= render movie %>
-#     <p>
-#       <%= link_to "Show this movie", movie %>
-#     </p>
-#   <% end %>
-# </div>
 <h1>Movies</h1>
 <table>
   <tr>
-    <th>Title </th>
-    <th>Rating </th>                      
-    <th>Release Date </th>
+  <th><%= link_to "Movie Title", :sort => "title"%> </th>
+  <th><%= link_to "Rating", :sort => "rating"%> </th>
+  <th><%= link_to "Release Date", :sort => "release_date"%> </th>
   </tr>
  <% @movies.each do |movie| %>
   <tr>
