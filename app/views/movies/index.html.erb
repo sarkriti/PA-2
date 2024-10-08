@@ -4,18 +4,14 @@
 
 
 
-<div id="movies">
-  <% @movies.each do |movie| %>
-    <%= render movie %>
-    <p>
-      <%= link_to "Show this movie", movie %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New movie", new_movie_path %>
-
-#views/players/index.html.erb
+# <div id="movies">
+#   <% @movies.each do |movie| %>
+#     <%= render movie %>
+#     <p>
+#       <%= link_to "Show this movie", movie %>
+#     </p>
+#   <% end %>
+# </div>
 <h1>Movies</h1>
 <table>
   <tr>
@@ -27,8 +23,11 @@
   <tr>
     <td><%= movie.title%></td>     
     <td><%=movie.rating %></td>     
-    <td><%=movie.release_date %></td>  
+    <td><%=movie.release_date %><td></td>  
     <td><%= link_to "Show this movie", movie %></td>      
   </tr>
   <% end %>
  </table>
+<%= link_to "New movie", new_movie_path %>
+
+#views/players/index.html.erb
