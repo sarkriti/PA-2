@@ -68,3 +68,7 @@ class MoviesController < ApplicationController
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
 end
+#sort movies table by column
+def sort_table
+  @movies = Movie.order(params[:sort])
+end
