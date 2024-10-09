@@ -1,22 +1,33 @@
+<html>
+<head>
+<style>
+p.ridge {border-style: ridge;}
+</style>
+</head>
+
+<body>
+
 <div id="<%= dom_id movie %>">
-  <p>
+  <p class="ridge">
     <strong>Title:</strong>
     <%= movie.title %>
   </p>
 
-  <p>
+  <p class="ridge">
     <strong>Rating:</strong>
     <%= movie.rating %>
   </p>
 
-  <p>
+  <p class="ridge">
     <strong>Description:</strong>
     <%= movie.description %>
   </p>
 
-  <p>
+  <p class="ridge">
     <strong>Release date:</strong>
     <%= movie.release_date %>
   </p>
 
 </div>
+</body>
+</html>
