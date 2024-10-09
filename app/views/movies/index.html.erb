@@ -5,9 +5,9 @@
 <h1>Movies</h1>
 <table>
   <tr>
-  <th><%= sortable "title"%> </th>
-  <th><%= sortable "rating"%> </th>
-  <th><%= sortable "release_date","Release Date"%> </th>
+  <th><%= link_to "Movie Title", :sort => "title"%> </th>
+  <th><%= link_to "Rating", :sort => "rating"%> </th>
+  <th><%= link_to "Release Date", :sort => "release_date"%> </th>
   </tr>
  <% @movies.each do |movie| %>
   <tr>
