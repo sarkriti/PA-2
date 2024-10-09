@@ -3,26 +3,26 @@
 <html>
 <head>
 <style>
-#customers {
+#movies {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#movies td, #movies th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#movies tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#movies tr:hover {background-color: #ddd;}
 
-#customers th {
+#movies th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: #d9d2e9;
   color: white;
 }
 </style>
@@ -31,7 +31,7 @@
 <% content_for :title, "Movies" %>
 
 <h1>Movies</h1>
-<table>
+<table id="movies" >
   <tr>
   <th><%= link_to "Movie Title", :sort => "title"%> </th>
   <th><%= link_to "Rating", :sort => "rating"%> </th>
@@ -47,3 +47,4 @@
   <% end %>
  </table>
 <%= link_to "New movie", new_movie_path %>
+
