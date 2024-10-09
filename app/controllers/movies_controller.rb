@@ -74,6 +74,6 @@ class MoviesController < ApplicationController
   end
   
   def sort_direction
-  params[:direction] || "asc"
+    params[:direction] || "asc"
   end
 end
