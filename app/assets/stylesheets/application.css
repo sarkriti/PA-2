@@ -1,14 +1,14 @@
-th .current {
+th .asc {
     padding-right: 12px;
     background-repeat: no-repeat;
     background-position: right center;
-  }
-  
-th .asc {
     content: "\u2191";
   }
   
  th .desc {
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position: right center;
     background-image: "\uA71C";
  }
  table#movies th a.hilight {
