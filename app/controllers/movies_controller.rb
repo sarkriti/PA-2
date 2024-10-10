@@ -3,6 +3,7 @@ class MoviesController < ApplicationController
 
   # GET /movies or /movies.json
   def index
+    params[:sort] ||= "title"
     @movies = Movie.order(params[:sort]+" "+params[:direction])
   end
 
