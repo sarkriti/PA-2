@@ -1,13 +1,16 @@
-#current {
+th .current {
     padding-right: 12px;
     background-repeat: no-repeat;
     background-position: right center;
   }
   
-#asc:before {
-    content: "\2191";
+th .asc {
+    content: "\u2191";
   }
   
-.pretty th .desc {
-    background-image: "\A71C";
+ th .desc {
+    background-image: "\uA71C";
  }
+ table#movies th a.hilight {
+    background-color: yellow;
+  }
