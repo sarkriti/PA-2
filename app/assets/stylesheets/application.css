@@ -1,11 +1,11 @@
-th .asc {
+table#movies th .asc {
     padding-right: 12px;
     background-repeat: no-repeat;
     background-position: right center;
     content: "\u2191";
   }
   
- th .desc {
+table#movies th .desc {
     padding-right: 12px;
     background-repeat: no-repeat;
     background-position: right center;
